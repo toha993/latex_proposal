@@ -1,0 +1,117 @@
+\documentclass[13pt]{extarticle}
+\usepackage[utf8]{inputenc}
+\usepackage{cite}
+\usepackage[nottoc]{tocbibind}
+\usepackage{graphicx}
+\graphicspath{\images}
+\usepackage{color}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=red,
+    linktoc=all
+}
+
+\title{Startup-X}
+\date{}
+\include{titlepage}
+
+%\includegraphics[width=50mm]{images/sustlogo.png}
+\begin{document}
+\tableofcontents
+
+\newpage
+\maketitle{}
+\section{\textbf{Idea:} }
+
+\quad X ( Business Holder) wants to open a new delivery service on his locality. He thinks it has great potential and is profitable. He has arranged some local drivers who will be carrying goods door to door. Now for marketing, he uses social media for publicity. His business operation is based on phones. He receives orders over the phone. Then send a photo of the order to one of his currently available drivers. The driver, later on, collects items and carries them to the customer’s home. Finally, the customer checks every item and the bill for the order and pays for the service. 
+
+Y (Customer) thinks he can use X’s service. This service will save him time. He really does not want to visit crowded local bazar at this hot and humid weather. But he finds it difficult to connect one of the phone numbers provided by X. Y is hoping X will start taking orders from apps or sites. It would be much better for him. 
+
+ So what we want to provide X is a web platform where his customers will place orders. If they prefer over phones then X will initiate a new order for his service, where he will place an order on behalf of his customers. This service will generate a better invoice which X will send to his employee. At the end of the day, it will be easier for X to keep track of his daily business. Moreover, this can help X’s business to grow better. And X will use this provide as pay peruse. We will be taking care of his all technical issues. 
+
+We can provide this service to any local delivery business around the country.
+\newpage
+\section{\textbf{Goal:}}
+\begin{enumerate}
+  \item Doing proper requirement engineering and collecting functional requirements and non-functional requirements from business holder and customers.
+  \item Creating a database schema according to the requirements of the business holder and customers and implement it.
+  \item Implementing user authentication and validation through OTP
+  \item Implementing Services like Laundry,Grocery,Ticket,Medical Report
+  \item Implementing invoice system for both customers and business holders
+  \item Creating UI which is suitable for customers and business holders
+  \item Creating API for interaction of Back-end and Database
+\end{enumerate}
+\newpage
+
+\section{\textbf{Requirements:}}
+\subsection{Front End:}
+\begin{itemize}
+    \item Initially, we will start with a free template.
+\end{itemize}
+\subsection{Database:}
+\begin{itemize}
+    \item MySQL
+    \item Databse Design
+\end{itemize}
+\subsection{Framework(Environment):}
+\begin{itemize}
+    \item NodeJS with Express
+\end{itemize}
+\subsection{Cloud Services:}
+\begin{itemize}
+    \item Google Cloud Service
+\end{itemize}
+\subsection{Version Control:}
+\begin{itemize}
+    \item Github
+\end{itemize}
+\newpage
+
+\section{\textbf{Features:}}
+\subsection{Business Holder:}
+\begin{itemize}
+    \item Registration/login 
+\item Receives Order from customers
+\item Initiate Order for customers
+\item services ( Laundry, Grocery, Ticket, Medical Report)
+\item local vendors ( Local service providers)
+\item Manage Business
+ \item Generate invoice 
+\end{itemize}
+\subsection{Customers:}
+\begin{itemize}
+    \item Registration/login 
+\item Select services ( Laundry, Grocery, Ticket, Medical Report)
+\item Select preferable local vendors ( Local service providers) (Optional)
+\item Place new Order
+\end{itemize}
+\newpage
+\section{\textbf{Specific Outcome:}}
+\begin{itemize}
+    \item faster to order for customers
+    \item Better and easier communication between business holders and customers
+    \item Transparency in pricing
+    \item Better trust between business holders and customers
+    \item Less cost in communicating and ordering
+    \item Better system for monitoring the business for holders
+\end{itemize}
+\newpage
+\begin{thebibliography}{9}
+\bibitem{}
+\texttt{https://nodejs.org/en/docs/}
+\bibitem{}
+\texttt{https://dev.mysql.com/doc/}
+\bibitem{}
+\texttt{https://cloud.google.com/docs}
+\bibitem{}
+\texttt{https://reactjs.org/docs/getting-started.html}
+\bibitem{}
+\texttt{https://docs.github.com/en}
+\bibitem{}
+\texttt{https://expressjs.com/en/resources/glossary.html}
+\bibitem{}
+\texttt{https://www.twilio.com/docs}
+\end{thebibliography}
+\end{document}
