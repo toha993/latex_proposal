@@ -1,6 +1,11 @@
 \documentclass[13pt]{extarticle}
 \usepackage[utf8]{inputenc}
 \usepackage{cite}
+
+%\usepackage[margin=0.5in]{geometry}
+\usepackage{textcomp}
+\usepackage{pgfplots}
+\pgfplotsset{width=10cm,compat=1.9}
 \usepackage[nottoc]{tocbibind}
 \usepackage{graphicx}
 \graphicspath{\images}
@@ -9,7 +14,7 @@
 \hypersetup{
     colorlinks=true,
     linkcolor=black,
-    urlcolor=red,
+    urlcolor=black,
     linktoc=all
 }
 
@@ -33,22 +38,44 @@ Y (Customer) thinks he can use X’s service. This service will save him time. H
 
 We can provide this service to any local delivery business around the country.
 \newpage
-\section{\textbf{Goal:}}
+\section{\textbf{Project Summary:}}
+\subsection{Project Background:}
+\quad The ongoing problem for a customer and business-holders is unable to connect with one-another instantly and connecting takes too long.Besides,there is no list of orders which is done by traditional way like over phone or offline.Business holder also can not keep the track of business by the traditional way.It is also quite impossible for a business holder to extend his business area because of the distance from his shop.Customers also unable to take better services because of the distance of the shop which give better service.Both customers and business holders have to worry about the ongoing problem because of their own interest.
+\subsection{Project Objectives:}
 \begin{enumerate}
-  \item Doing proper requirement engineering and collecting functional requirements and non-functional requirements from business holder and customers.
-  \item Creating a database schema according to the requirements of the business holder and customers and implement it.
-  \item Implementing user authentication and validation through OTP
-  \item Implementing Services like Laundry,Grocery,Ticket,Medical Report
-  \item Implementing invoice system for both customers and business holders
-  \item Creating UI which is suitable for customers and business holders
-  \item Creating API for interaction of Back-end and Database
+  \item Connecting customers and business holders instantly.
+  \item Keeping history of orders for both business holder and customers.
+  \item Keeping the track of delivery-man for giving wide services.
+  \item Generating invoices for the customers and business holders.
+  \item Getting more audience through internet so that both business holders and customers can have better service.
 \end{enumerate}
 \newpage
+\subsection{Project Features:}
+\subsubsection{Business Holders:}
+\begin{itemize}
+    \item Registration/login 
+\item Receives Order from customers
+\item Initiate Order for customers
+\item services ( Laundry, Grocery, Ticket, Medical Report)
+\item local vendors ( Local service providers)
+\item Manage Business
+ \item Generate invoice 
+\end{itemize}
+\subsubsection{Customers:}
+\begin{itemize}
+    \item Registration/login 
+\item Select services ( Laundry, Grocery, Ticket, Medical Report)
+\item Select preferable local vendors ( Local service providers) (Optional)
+\item Place new Order
+\item History of previous orders
+\end{itemize}
+\newpage
 
-\section{\textbf{Requirements:}}
+\section{\textbf{Project Methodologies:}}
 \subsection{Front End:}
 \begin{itemize}
-    \item Initially, we will start with a free template.
+    \item We will use ReactJS for the front-end.
+    \item We will use CSS for styling front-end.
 \end{itemize}
 \subsection{Database:}
 \begin{itemize}
@@ -63,32 +90,22 @@ We can provide this service to any local delivery business around the country.
 \begin{itemize}
     \item Google Cloud Service
 \end{itemize}
+\subsection{OTP Services:}
+\begin{itemize}
+    \item Twilio Service
+\end{itemize}
 \subsection{Version Control:}
 \begin{itemize}
     \item Github
 \end{itemize}
-\newpage
-
-\section{\textbf{Features:}}
-\subsection{Business Holder:}
+\section{\textbf{Project Risk Management:}}
 \begin{itemize}
-    \item Registration/login 
-\item Receives Order from customers
-\item Initiate Order for customers
-\item services ( Laundry, Grocery, Ticket, Medical Report)
-\item local vendors ( Local service providers)
-\item Manage Business
- \item Generate invoice 
-\end{itemize}
-\subsection{Customers:}
-\begin{itemize}
-    \item Registration/login 
-\item Select services ( Laundry, Grocery, Ticket, Medical Report)
-\item Select preferable local vendors ( Local service providers) (Optional)
-\item Place new Order
+    \item Identifying the sources of risk by functionality.
+    \item Evaluating the risk.
+    \item Reducing the impact of an unexpected even in various ways like avoidance,sharing,transfer.
 \end{itemize}
 \newpage
-\section{\textbf{Specific Outcome:}}
+\section{\textbf{Specific Outcome}}
 \begin{itemize}
     \item faster to order for customers
     \item Better and easier communication between business holders and customers
@@ -97,21 +114,20 @@ We can provide this service to any local delivery business around the country.
     \item Less cost in communicating and ordering
     \item Better system for monitoring the business for holders
 \end{itemize}
-\newpage
 \begin{thebibliography}{9}
 \bibitem{}
-\texttt{https://nodejs.org/en/docs/}
+ \href{https://nodejs.org/en/docs/}{https://nodejs.org/en/docs/}
 \bibitem{}
-\texttt{https://dev.mysql.com/doc/}
+\href{https://dev.mysql.com/doc/}{https://dev.mysql.com/doc/}
 \bibitem{}
-\texttt{https://cloud.google.com/docs}
+\href{https://cloud.google.com/docs}{https://cloud.google.com/docs}
 \bibitem{}
-\texttt{https://reactjs.org/docs/getting-started.html}
+\href{https://reactjs.org/docs/getting-started.html}{https://reactjs.org/docs/getting-started.html}
 \bibitem{}
-\texttt{https://docs.github.com/en}
+\href{https://docs.github.com/en}{https://docs.github.com/en}
 \bibitem{}
-\texttt{https://expressjs.com/en/resources/glossary.html}
+\href{https://expressjs.com/en/resources/glossary.html}{https://expressjs.com/en/resources/glossary.html}
 \bibitem{}
-\texttt{https://www.twilio.com/docs}
+\href{https://www.twilio.com/docs}{https://www.twilio.com/docs}
 \end{thebibliography}
 \end{document}
